@@ -1,0 +1,43 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "DialogCodeHook",
+  "userId": "John",
+  "sessionAttributes": {},
+  "bot": {
+    "name": "RoboAdvisor",
+    "alias": "$LATEST",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "RecommendPortfolio",
+    "slots": {
+      "firstName": "John",
+      "age": "70",
+      "riskLevel": "Low",
+      "investmentAmount": "5000"
+    },
+    "confirmationStatus": "None"
+  }
+}
+
+Response:
+
+{
+  "sessionAttributes": {},
+  "dialogAction": {
+    "type": "ElicitSlot",
+    "intentName": "RecommendPortfolio",
+    "slots": {
+      "firstName": "John",
+      "age": null,
+      "slotFour": "Low",
+      "investmentAmount": "5000"
+    },
+    "slotToElicit": "age",
+    "message": {
+      "contentType": "PlainText",
+      "content": "You should be 0 and 65 years old to use this service, please provide a valid age between 0 and 65."
+    }
+  }
+}
