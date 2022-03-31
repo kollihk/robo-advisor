@@ -93,7 +93,7 @@ def validate_data(first_name, age, investment_amount, intent_request):
                 "please provide a valid name containing only alhabets of unicode format",
             )
 
-    # Validate that the user is over 18 years old
+    # Validate that the user is over 0 years old
 
     
     if age is not None:
@@ -106,7 +106,7 @@ def validate_data(first_name, age, investment_amount, intent_request):
                 "please provide a valid age between 0 and 65.",
             )
 
-    # Validate the investment amount, it should be > 0
+    # Validate the investment amount, it should be > 50000
     if investment_amount is not None:
         investment_amount = parse_int(
             investment_amount
